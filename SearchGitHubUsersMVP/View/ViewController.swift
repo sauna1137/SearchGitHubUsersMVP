@@ -56,6 +56,13 @@ extension ViewController: UISearchBarDelegate {
 }
 
 extension ViewController: PresenterDelegate {
+    func passFetchGitHubUsersAlert(errorString: String) {
+        let alert = UIAlertController(title: errorString, message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+
     func passFetchedGitHubUsers(githubUsers: [GitHubUsers]) {
         gitHubUsers = githubUsers
         tableView.reloadData()
