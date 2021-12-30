@@ -25,6 +25,7 @@
 		8A146D8F277DB12300220F40 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D8E277DB12300220F40 /* Presenter.swift */; };
 		8A146D91277DB16800220F40 /* DecodeForGitHubUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D90277DB16800220F40 /* DecodeForGitHubUsers.swift */; };
 		8A146D93277DB19300220F40 /* FetchGitHubUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D92277DB19300220F40 /* FetchGitHubUsers.swift */; };
+		8A146D96277E0DC400220F40 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A146D95277E0DC400220F40 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		8A146D8E277DB12300220F40 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		8A146D90277DB16800220F40 /* DecodeForGitHubUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeForGitHubUsers.swift; sourceTree = "<group>"; };
 		8A146D92277DB19300220F40 /* FetchGitHubUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGitHubUsers.swift; sourceTree = "<group>"; };
+		8A146D95277E0DC400220F40 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		D47A7D85310FC8B3B8AE2298 /* Pods_SearchGitHubUsersMVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchGitHubUsersMVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA37BAF9DDE054637A828E4D /* Pods_SearchGitHubUsersMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchGitHubUsersMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9166D3031F035F1D81C969D /* Pods-SearchGitHubUsersMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchGitHubUsersMVP.debug.xcconfig"; path = "Target Support Files/Pods-SearchGitHubUsersMVP/Pods-SearchGitHubUsersMVP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				8A146D90277DB16800220F40 /* DecodeForGitHubUsers.swift */,
 				8A146D92277DB19300220F40 /* FetchGitHubUsers.swift */,
+				8A146D95277E0DC400220F40 /* Errors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				8A146D55277D9B2F00220F40 /* AppDelegate.swift in Sources */,
 				8A146D57277D9B2F00220F40 /* SceneDelegate.swift in Sources */,
 				8A146D88277DA00000220F40 /* WebViewController.swift in Sources */,
+				8A146D96277E0DC400220F40 /* Errors.swift in Sources */,
 				8A146D91277DB16800220F40 /* DecodeForGitHubUsers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
