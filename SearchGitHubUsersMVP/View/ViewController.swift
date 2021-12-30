@@ -39,6 +39,14 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
         cell.nameLabel.text = gitHubUsers[indexPath.row].login
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let webVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebVC") as! WebViewController
+        webVC.url = gitHubUsers[indexPath.row].htmlURL
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(webVC, animated: true)
+    }
 }
 
 extension ViewController: UISearchBarDelegate {
