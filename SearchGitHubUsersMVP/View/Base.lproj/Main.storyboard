@@ -57,7 +57,7 @@
         <!--Web View Controller-->
         <scene sceneID="efZ-zu-yeb">
             <objects>
-                <viewController id="UIi-gi-kLO" customClass="WebViewController" customModule="SearchGitHubUsersMVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UIi-gi-kLO" customClass="WebViewController" customModule="SearchGitHubUsersMVP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AAj-pk-zhq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
