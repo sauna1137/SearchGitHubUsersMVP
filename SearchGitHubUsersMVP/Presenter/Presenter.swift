@@ -9,6 +9,7 @@ import Foundation
 
 protocol PresenterDelegate {
     func passFetchedGitHubUsers(githubUsers: [GitHubUsers])
+    func passFetchGitHubUsersAlert(errorString: String)
 }
 
 class Presenter {
@@ -18,9 +19,15 @@ class Presenter {
 
 
     func searchBarDidSearch(searchText: String) {
-        fetchGitHubUsers.fetchGitHubUsers(searchText: searchText) { gitHubUsers in
-            self.delegate?.passFetchedGitHubUsers(githubUsers: gitHubUsers)
-            print(gitHubUsers)
+        fetchGitHubUsers.fetchGitHubUsers(searchText: searchText) { gitHubUsers, error  in
+
+            if let error = error {
+                self.delegate?.passFetchGitHubUsersAlert(errorString: error)
+            }
+
+            if let gitHubUsers = gitHubUsers {
+                self.delegate?.passFetchedGitHubUsers(githubUsers: gitHubUsers)
+            }
         }
     }
 
